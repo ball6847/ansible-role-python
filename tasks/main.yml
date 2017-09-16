@@ -1,0 +1,5 @@
+- name: Install Python
+  become: true
+  raw: "test -e /usr/bin/python || (apt install -y {{ python_package }})"
+  register: cmd_apt_install_python
+  changed_when: "cmd_apt_install_python.stdout != ''"

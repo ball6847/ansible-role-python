@@ -1,0 +1,8 @@
+galaxy_info:
+  author: Porawit Poboonma
+  description: Install python to make ansible work
+  company: Porawit Poboonma
+  license: license (GPLv2, CC-BY, etc)
+  min_ansible_version: 1.2
+  galaxy_tags:
+    - python
