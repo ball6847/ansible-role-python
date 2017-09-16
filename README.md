@@ -36,4 +36,6 @@ Playbook Example
 Variables
 ---------
 
-**python_package**: name of python package you want to install (default: `python-minimal`), you might need to change this to something like `python-dev` if your system relies on python development package.
+**python_package**: 
+
+name of python package you want to install (default: `python-minimal`), you might need to change this to something like `python-dev` if your system relies on python development package.
