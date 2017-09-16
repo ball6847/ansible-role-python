@@ -1,4 +1,4 @@
-Ansible Role : ball6847.python
+Ansible Role : ball6847.role.python
 ==============================
 
 Very simple role to install python-minimal on your **ubuntu** box,
@@ -8,13 +8,14 @@ Installation
 ------------
 
 ```sh
-ansible-galaxy install git+https://github.com/ball6847/ansible-role-python.git,master
+ansible-galaxy install git+https://github.com/ball6847/ball6847.role.python.git,master
 ```
 
 or by requirements.yml then do `ansible-galaxy install -r requirements.yml`
 
 ```yml
-# requirements.yml commingsoon
+- src: https://github.com/ball6847/ball6847.role.python.git
+  version: master
 ```
 
 Playbook Example
@@ -26,7 +27,7 @@ Playbook Example
   hosts: all
   gather_facts: no
   roles:
-    - ball6847.python
+    - ball6847.role.python
 ```
 
  **IMPORTANT**:
@@ -36,6 +37,6 @@ Playbook Example
 Variables
 ---------
 
-**python_package**: 
+**python_package**:
 
 name of python package you want to install (default: `python-minimal`), you might need to change this to something like `python-dev` if your system relies on python development package.
