@@ -32,3 +32,8 @@ Playbook Example
  **IMPORTANT**:
 
 `gather_facts: no` is neccessary since `gather_facts: yes` (which is `yes` by default) requires python to be installed on remote machine.
+
+Variables
+---------
+
+**python_package**: name of python package you want to install (default: `python-minimal`), you might need to change this to something like `python-dev` if your system relies on python development package.
